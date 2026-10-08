@@ -6,7 +6,7 @@
 
 <style>
     body {
-        font-family: Arial, sans-serif;
+        font-family: "Segoe UI", Arial, sans-serif;
         margin: 0;
         background-color: #f7f9fc;
         color: #222;
@@ -115,11 +115,28 @@ color: #333;
 }
 
     .project {
-        background-color: white;
-        padding: 25px;
-        margin-bottom: 20px;
-        border: 1px solid #ddd;
-        border-radius: 8px;
+background-color: white;
+padding: 30px;
+margin-bottom: 25px;
+border: 1px solid #ddd;
+border-radius: 10px;
+transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project:hover {
+transform: translateY(-4px);
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.project h3 {
+margin-top: 0;
+font-size: 22px;
+}
+
+.project p {
+color: #555;
+}
+
     }
 
     footer {
