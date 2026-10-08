@@ -14,35 +14,45 @@
     }
 
     header {
-        background-color: #ffffff;
-        padding: 25px 8%;
-        border-bottom: 1px solid #ddd;
-    }
+background-color: #ffffff;
+padding: 20px 8%;
+border-bottom: 1px solid #ddd;
+}
 
-    header h1 {
-        margin: 0;
-        font-size: 28px;
-    }
+.header-content {
+max-width: 1100px;
+margin: auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
 
-    header p {
-        margin: 5px 0 0;
-        color: #555;
-    }
+header h1 {
+margin: 0;
+font-size: 26px;
+}
 
-    nav {
-        margin-top: 15px;
-    }
+header p {
+margin: 3px 0 0;
+color: #666;
+font-size: 14px;
+}
 
-    nav a {
-        margin-right: 20px;
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
-    }
+nav {
+display: flex;
+gap: 25px;
+}
 
-    nav a:hover {
-        color: #0066cc;
-    }
+nav a {
+text-decoration: none;
+color: #333;
+font-weight: 600;
+}
+
+nav a:hover {
+color: #0066cc;
+}
+
 
     .hero {
         text-align: center;
@@ -153,8 +163,11 @@ color: #555;
 <body>
 
 <header>
-    <h1>Anjola Balogun</h1>
-    <p>Business & Data Analyst</p>
+    <div class="header-content">
+        <div>
+            <h1>Anjola Balogun</h1>
+            <p>Business & Data Analyst</p>
+        </div>
 
     <nav>
         <a href="#about">About</a>
@@ -162,7 +175,10 @@ color: #555;
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
+</div>
+
 </header>
+
 
 <div class="hero">
     <h2>Business & Data Analyst</h2>
