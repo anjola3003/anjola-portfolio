@@ -322,6 +322,53 @@
             animation-duration: 0.01ms !important;
         }
     }
+    
+.project-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin: 24px 0;
+}
+
+.metric {
+    background: var(--lilac);
+    border-radius: 14px;
+    padding: 18px 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.metric-value {
+    color: var(--plum);
+    font-size: clamp(18px, 3vw, 25px);
+    font-weight: 800;
+    overflow-wrap: anywhere;
+}
+
+.metric-label {
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 500px) {
+    .project-metrics {
+        gap: 8px;
+    }
+
+    .metric {
+        padding: 14px 6px;
+    }
+
+    .metric-label {
+        font-size: 10px;
+    }
+}
+
 </style>
 
 
@@ -458,17 +505,26 @@
         <p><strong>TOOLS USED</strong></p>
         <p>Excel &nbsp; · &nbsp; SQL &nbsp; · &nbsp; Tableau</p>
 
-        <h4>Project Snapshot</h4>
+        
+<div class="project-metrics">
 
-        <p>
-            <strong>$12.64M</strong> — Total sales
-        </p>
-        <p>
-            <strong>$1.47M</strong> — Total profit
-        </p>
-        <p>
-            <strong>11.62%</strong> — Overall profit margin
-        </p>
+    <div class="metric">
+        <span class="metric-value">$12.64M</span>
+        <span class="metric-label">Total Sales</span>
+    </div>
+
+    <div class="metric">
+        <span class="metric-value">$1.47M</span>
+        <span class="metric-label">Total Profit</span>
+    </div>
+
+    <div class="metric">
+        <span class="metric-value">11.62%</span>
+        <span class="metric-label">Profit Margin</span>
+    </div>
+
+</div>
+
 
         <h4>Key Findings</h4>
 
